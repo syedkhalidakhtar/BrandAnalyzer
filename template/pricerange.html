@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <form action="/pricerange.html" method="POST">
+        <h1>Please select a price range</h1>
+        <br>
+        <select class="form-select" id="pricerange" name="range">
+            <option value="lowerrange">₹0-₹700</option>
+            <option value="midrange">₹700-₹1400</option>
+            <option value="highrange">₹1400+</option>
+        </select>
+        <br><br>
+        <button type="submit" class="btn btn-secondary">Apply</button>
+    </form>
+</div>
+{% endblock %}

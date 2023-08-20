@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <form action="female.html" method="POST">
+        <h1>Select a product</h1>
+        <br>
+        <select class="form-select" name="female_product" id="female">
+            <option value="Tops">Tops</option>
+            <option value="T-shirt">T-Shirt</option>
+            <option value="Sarees">Sarees</option>
+            <option value="Kurta&Kurtis">Kurta Kurtis</option>
+        </select>
+        <br><br>
+        <button type="submit" class="btn btn-secondary">Apply</button>
+    </form>
+</div>
+{% endblock %}

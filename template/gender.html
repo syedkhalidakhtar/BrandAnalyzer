@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <form action="/gender.html" method="POST">
+    <h1>Please select a gender</h1><br/>
+    <select class="form-select" id="gender" name="gendertype">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <br><br>
+    <button type="submit" class="btn btn-secondary">Apply</button>
+    </form>
+</div>
+{% endblock %}
